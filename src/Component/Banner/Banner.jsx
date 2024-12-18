@@ -1,6 +1,6 @@
 import Logo from '/Image/Logo.png';
 import Vector from '/Image/Vector.png';
-import Slider from '../../../public/Image/Banner.png';
+import Slider from '/Image/Banner.png';
 import './Banner.css';
 import { FaMapMarkerAlt, FaSearch } from 'react-icons/fa';
 

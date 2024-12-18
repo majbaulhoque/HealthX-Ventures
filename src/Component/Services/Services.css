@@ -1,0 +1,108 @@
+
+.services-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 60px;
+    text-align: center; 
+}
+
+/* Header styling */
+.services-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 30px;
+}
+
+.services-header img {
+    width: 27px;
+    height: 27px; 
+    margin-bottom: 0; 
+    margin-right: 11px;
+}
+
+.services-header p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #004990;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+
+.services-list {
+    font-size: 36px;
+    color: #000D44;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-bottom: 42px;
+    width: 400px;
+    margin: auto;
+    text-align: center; 
+}
+
+/* Grid layout for cards */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+}
+
+/* Individual card styling */
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; 
+    padding: 15px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    padding: 7px;
+    background: #e6e9ee;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    color: #000D44;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.service-card button {
+    background: linear-gradient(to bottom, #014990, #DAEDFF);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.service-card button:hover {
+    background: linear-gradient(to bottom, #DAEDFF, #014990);
+    transform: translateY(-2px);
+}
