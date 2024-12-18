@@ -1,4 +1,3 @@
-
 .services-container {
     max-width: 1120px;
     margin: 0 auto;
@@ -6,7 +5,6 @@
     text-align: center; 
 }
 
-/* Header styling */
 .services-header {
     display: flex;
     align-items: center;
@@ -17,7 +15,6 @@
 .services-header img {
     width: 27px;
     height: 27px; 
-    margin-bottom: 0; 
     margin-right: 11px;
 }
 
@@ -27,9 +24,7 @@
     color: #004990;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    margin: 0;
 }
-
 
 .services-list {
     font-size: 36px;
@@ -42,24 +37,20 @@
     text-align: center; 
 }
 
-/* Grid layout for cards */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px; 
 }
 
-/* Individual card styling */
 .service-card {
     background-color: #fff;
     border: 1px solid #ddd;
-    width: 250px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center; 
     padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
@@ -97,7 +88,6 @@
     padding: 10px 20px;
     font-size: 14px;
     font-weight: bold;
-    text-transform: uppercase;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
 }
@@ -105,4 +95,38 @@
 .service-card button:hover {
     background: linear-gradient(to bottom, #DAEDFF, #014990);
     transform: translateY(-2px);
+}
+
+.services-explore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.explore-line {
+    flex: 1; 
+    height: 1px;
+    background-color: #ddd;
+}
+
+.explore-content {
+    padding: 5px 20px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    background-color: #fff;
+    white-space: nowrap;
+}
+
+.explore-link {
+    color: #004990;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.explore-link:hover {
+    text-decoration: underline;
 }
