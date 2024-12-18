@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "Dr. Dredor Smith",
+      "specialty": "Medicine Specialist",
+      "rating": 3.9,
+      "reviews": 252,
+      "patients": 4895,
+      "hospital": "Infermedica Hospital, NYC",
+      "image": "https://i.ibb.co.com/QjxKj8b/image.png"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Amrita Sen Gupta",
+      "specialty": "General Surgeon",
+      "rating": 4.8,
+      "reviews": 599,
+      "patients": 1698,
+      "hospital": "Mediplus Hospital, NYC",
+      "image": "https://i.ibb.co.com/7g5RXBD/image-1.png"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Christinne Jones",
+      "specialty": "Pediatrist",
+      "rating": 4.8,
+      "reviews": 321,
+      "patients": 9375,
+      "hospital": "Advocate Hospital, NYC",
+      "image": "https://i.ibb.co.com/KFB2dTn/Rectangle-30.png"
+    }
+  ]
+  

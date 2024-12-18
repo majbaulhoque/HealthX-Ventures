@@ -40,7 +40,7 @@ const ChooseUs = () => {
                             <h3>Personalized Treatment Plans</h3>
                             <p>
                                 We understand that every patient is unique, and their healthcare
-                                needs may vary. That's why we create individualized treatment.
+                                needs may vary. That{`'`}s why we create individualized treatment.
                             </p>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ const ChooseUs = () => {
                 {/* Right Section: Image */}
                 <div className="choose-us-image">
                     <div className="background-shape"></div>
-                    <img src={Doctor} alt="Doctor" className="doctor-image" />
+                    <img src={Doctor} alt="Doctor" className="choose-doctor-image" />
                     <img src={Plus} alt="Health Plus Icon" className="plus-icon" />
                 </div>
             </div>

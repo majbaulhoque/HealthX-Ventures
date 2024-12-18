@@ -1,0 +1,123 @@
+/* Doctor Container */
+.doctor-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1120px; /* Large screen max-width */
+}
+
+/* Doctor Card */
+.doctor-card {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 12px;
+    width: 280px; /* Card width */
+    transition: transform 0.3s ease-in-out;
+}
+
+.doctor-card:hover {
+    transform: translateY(-8px);
+}
+
+.doctor-image {
+    width: 100%; /* Use full width of the card */
+    max-width: 311px; /* Maintain aspect ratio */
+    height: 359px; /* Adjust height automatically */
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    background-color: #f7f9fe;
+}
+
+.doctor-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #1D2B4F;
+    text-align: left;
+}
+
+.doctor-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .doctor-specialty {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .doctor-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .star-icon {
+    font-size: 1rem;
+    color: #f5c518;
+  }
+  
+
+.doctor-patients {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 36px;
+    color: black;
+    text-align: left;
+}
+
+.doctor-hospital {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* Responsive Design */
+
+/* Small Devices - Phones (max-width: 600px) */
+@media (max-width: 600px) {
+    .doctor-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .doctor-card {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+}
+
+/* Medium Devices - Tablets (601px to 991px) */
+@media (min-width: 601px) and (max-width: 991px) {
+    .doctor-container {
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .doctor-card {
+        width: 45%;
+    }
+}
+
+/* Large Devices - Desktops (992px and above) */
+@media (min-width: 992px) {
+    .doctor-container {
+        justify-content: space-between;
+    }
+
+    .doctor-card {
+        width: 280px;
+    }
+}
