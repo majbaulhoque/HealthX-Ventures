@@ -1,0 +1,240 @@
+/* Section Styling */
+.choose-us-section {
+    padding: 2rem;
+    background: linear-gradient(to bottom, #F1FAFF, #E8F1FF);
+    margin-top: 2rem;
+}
+
+.choose-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    max-width: 1120px;
+    margin: auto;
+    padding-top: 60px;
+    margin-bottom: 10px;
+}
+
+.choose-container p {
+    color: #004990;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.choose-us-logo {
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1120px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+/* Left Content Section */
+.choose-us-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.choose-us-content h2 {
+    font-size: 1.8rem;
+    color: #123456;
+    margin-bottom: 1.5rem;
+    width: 400px;
+}
+
+.choose-us-point {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.point-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #004990;
+    margin-right: 1rem;
+    border: 1px solid #000D44;
+    border-radius: 50%;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem; /* Set the width of the circle */
+    height: 2rem; /* Set the height of the circle */
+}
+
+.point-details h3 {
+    font-size: 1.1rem;
+    color: #000D44;
+    font-weight: bold;
+}
+
+.point-details p {
+    font-size: 0.95rem;
+    color: #555;
+    width: 400px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D8DDE1;
+}
+
+/* Right Image Section */
+.choose-us-image {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin-top: -80px;
+}
+
+.background-shape {
+    position: absolute;
+    background: linear-gradient(180deg, #004990, #D3EAFF);
+    width: 100%;
+    height: 73%;
+    border-radius: 30px;
+    margin-right: 35px;
+    z-index: 0;
+    top: 27%;
+}
+
+.doctor-image {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 400px; /* More reduction for medium and small devices */
+    margin-right: 75px;
+}
+
+.plus-icon {
+    position: absolute;
+    top: 22%;
+    margin-left: 475px;
+    width: 120px;
+    z-index: 2;
+}
+
+/* Responsive Design */
+
+/* Large Devices */
+@media screen and (max-width: 1200px) {
+    .choose-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        max-width: 1120px;
+        margin: auto;
+        padding-top: 60px;
+        margin-bottom: 5px;
+        justify-content: flex-start;
+    }
+
+    .choose-us-logo {
+        margin-right: 10px;
+        width: 80px;
+    }
+
+    .choose-container p {
+        color: #004990;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+/* Medium Devices */
+@media screen and (max-width: 768px) {
+    .choose-container {
+        display: flex;
+        flex-direction: column; /* Stack logo and text vertically */
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        padding-top: 40px;
+    }
+
+    .choose-us-logo {
+        margin-right: 0;
+        width: 70px; /* Resize logo for medium screens */
+        margin-bottom: 1rem;
+    }
+
+    .choose-container p {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .choose-us-content h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .doctor-image {
+        max-width: 300px; /* Reduce image size more significantly for medium screens */
+    }
+}
+
+/* Small Devices */
+@media screen and (max-width: 576px) {
+    .choose-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+        padding-top: 30px;
+    }
+
+    .choose-us-logo {
+        width: 60px; /* Reduce logo size for small screens */
+        margin-bottom: 1rem;
+    }
+
+    .choose-container p {
+        font-size: 12px; /* Reduce text size for small screens */
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .choose-us-content h2 {
+        font-size: 1.3rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .point-details p {
+        font-size: 0.85rem;
+    }
+
+    .plus-icon {
+        width: 80px;
+    }
+
+    .doctor-image {
+        max-width: 250px; /* Further reduce image size for small screens */
+    }
+}
+
+/* Prevent Horizontal Scrolling */
+body, html {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
