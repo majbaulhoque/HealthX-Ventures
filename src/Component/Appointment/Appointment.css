@@ -1,0 +1,128 @@
+.appointment-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    gap: 30px;
+}
+
+.appointment-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+.appointment-quote-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004990;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.appointment-quote-description {
+    font-size: 16px;
+    color: black;
+    line-height: 1.5;
+    max-width: 700px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 35px;
+}
+
+.appointment-image-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.appointment-background-shape {
+    position: absolute;
+    background: linear-gradient(180deg, #004990, #D3EAFF);
+    width: 71%;
+    height: 70%;
+    border-radius: 30px;
+    z-index: 0;
+    top: 30%;
+}
+
+.appointment-doctor-image {
+    position: relative;
+    z-index: 1;
+    max-width: 70%;
+    height: auto;
+    object-fit: cover;
+}
+
+.appointment-form-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.appointment-form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #195B9C;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.appointment-form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+}
+
+.appointment-form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: black;
+}
+
+.appointment-form-group input,
+.appointment-form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.appointment-form-group input:focus,
+.appointment-form-group textarea:focus {
+    border-color: #004990;
+    outline: none;
+}
+
+.appointment-form-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+.appointment-btn {
+    margin: auto;
+    display: block;
+    padding: 12px;
+    background: linear-gradient(to bottom, #014990, #DAEDFF);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appointment-btn:hover {
+    background: linear-gradient(to bottom, #DAEDFF, #014990);
+}
