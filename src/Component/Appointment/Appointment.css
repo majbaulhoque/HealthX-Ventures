@@ -9,22 +9,57 @@
     gap: 30px;
 }
 
+.appointment-logo{
+    margin-right: 10px;
+}
+
+.appointment-quote-description{
+    max-width: 700px;
+}
+
+.appointment-section{
+    margin-top: 2rem;
+}
+
+.appointment-image-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Align to start */
+    align-items: flex-start; /* Align to start */
+}
+
+.appointment-form-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Align to end */
+    align-items: flex-start;
+    padding-bottom: 50px;
+}
+
 @media (max-width: 768px) {
     .appointment-container {
         flex-direction: column;
         gap: 20px;
+        padding: 0 20px; 
     }
 
     .appointment-header {
         flex-direction: column;
         align-items: flex-start;
         text-align: center;
+        margin: 0 10px; 
     }
 
     .appointment-image-container,
     .appointment-form-container {
         flex: unset;
         width: 100%;
+    }
+
+    .appointment-image-container {
+        justify-content: center;
+        align-items: center;
     }
 
     .appointment-background-shape {
@@ -44,12 +79,17 @@
 
     .appointment-btn {
         width: 100%;
+        border-radius: 20px;
     }
 }
 
 @media (max-width: 480px) {
     .appointment-quote-title {
         font-size: 20px;
+    }
+
+    .appointment-logo{
+        padding-bottom: 10px;
     }
 
     .appointment-quote-description {
@@ -70,7 +110,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding-top: 50px;
 }
 
@@ -86,18 +126,10 @@
     font-size: 16px;
     color: black;
     line-height: 1.5;
-    max-width: 700px;
     text-align: center;
     margin: auto;
     padding-bottom: 35px;
-}
-
-.appointment-image-container {
-    position: relative;
-    flex: 1;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+    padding: 0 10px; 
 }
 
 .appointment-background-shape {
@@ -116,13 +148,6 @@
     max-width: 70%;
     height: auto;
     object-fit: cover;
-}
-
-.appointment-form-container {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 .appointment-form {
@@ -175,7 +200,7 @@
     font-size: 16px;
     font-weight: bold;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }

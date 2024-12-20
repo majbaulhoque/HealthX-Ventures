@@ -130,3 +130,89 @@
 .explore-link:hover {
     text-decoration: underline;
 }
+
+/* Responsive styles for sm and md devices */
+@media (max-width: 768px) {
+    .services-container {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .services-header {
+        flex-direction: column; /* Stack the image and text */
+        margin-bottom: 20px;
+    }
+
+    .services-header img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .services-header p {
+        font-size: 14px;
+    }
+
+    .services-list {
+        font-size: 28px;
+        width: 100%; /* Full width for smaller screens */
+        margin: 10px auto;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+        gap: 15px;
+    }
+
+    .service-card {
+        padding: 10px;
+    }
+
+    .service-card h3 {
+        font-size: 16px;
+    }
+
+    .service-card p {
+        font-size: 12px;
+    }
+
+    .service-card button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .services-explore {
+        flex-direction: column; /* Stack the line and content */
+        font-size: 12px;
+    }
+
+    .explore-line {
+        margin: 10px 0; /* Add spacing between stacked items */
+    }
+
+    .explore-content {
+        padding: 5px 15px;
+    }
+
+    .explore-link {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .services-grid {
+        grid-template-columns: 1fr; /* Single column for extra small screens */
+    }
+
+    .services-container {
+        padding: 30px 15px;
+    }
+
+    .services-list {
+        font-size: 24px;
+    }
+
+    .service-card img {
+        width: 40px;
+        height: 40px;
+    }
+}

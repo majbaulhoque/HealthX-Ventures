@@ -8,11 +8,10 @@
 .choose-container {
     display: flex;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 10px;
     max-width: 1120px;
     margin: auto;
     padding-top: 60px;
-    margin-bottom: 10px;
 }
 
 .choose-container p {
@@ -65,8 +64,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2rem; /* Set the width of the circle */
-    height: 2rem; /* Set the height of the circle */
+    width: 2rem;
+    height: 2rem;
 }
 
 .point-details h3 {
@@ -121,60 +120,28 @@
     z-index: 2;
 }
 
-/* Responsive Design */
-
-/* Large Devices */
-@media screen and (max-width: 1200px) {
-    .choose-container {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1.5rem;
-        max-width: 1120px;
-        margin: auto;
-        padding-top: 60px;
-        margin-bottom: 5px;
-        justify-content: flex-start;
-    }
-
-    .choose-us-logo {
-        margin-right: 10px;
-        width: 80px;
-    }
-
-    .choose-container p {
-        color: #004990;
-        font-size: 16px;
-        font-weight: bold;
-    }
-}
-
-/* Medium Devices */
+/* Responsive Design for Medium Devices */
 @media screen and (max-width: 768px) {
     .choose-container {
-        display: flex;
-        flex-direction: column; /* Stack logo and text vertically */
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        margin-bottom: 1rem;
         padding-top: 40px;
+        margin-bottom: 1rem;
     }
 
+
     .choose-us-logo {
-        margin-right: 0;
-        width: 70px; /* Resize logo for medium screens */
         margin-bottom: 1rem;
     }
 
     .choose-container p {
         font-size: 14px;
         text-align: center;
-        margin-top: 10px;
     }
 
     .container {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
     }
 
     .choose-us-content h2 {
@@ -184,30 +151,29 @@
     }
 
     .choose-doctor-image {
-        max-width: 300px; /* Reduce image size more significantly for medium screens */
+        max-width: 300px;
     }
 }
 
-/* Small Devices */
+/* Responsive Design for Small Devices */
 @media screen and (max-width: 576px) {
     .choose-container {
-        display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        margin-bottom: 0.5rem;
         padding-top: 30px;
+        margin-bottom: 0.5rem;
     }
 
+    
+
     .choose-us-logo {
-        width: 60px; /* Reduce logo size for small screens */
         margin-bottom: 1rem;
     }
 
+
     .choose-container p {
-        font-size: 12px; /* Reduce text size for small screens */
+        font-size: 12px;
         text-align: center;
-        margin-top: 5px;
     }
 
     .container {
@@ -218,23 +184,39 @@
     .choose-us-content h2 {
         font-size: 1.3rem;
         text-align: center;
-        width: 100%;
+        width: 400PX;
     }
 
     .point-details p {
         font-size: 0.85rem;
+        width: 300px;
+        text-align: justify;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .point-number{
+        width: 20px;
+        height: 20px;
+        font-size: 18px;
     }
 
     .plus-icon {
         width: 80px;
+        margin-right: 95px;
+        padding-top: 70px;
     }
 
     .choose-doctor-image {
-        max-width: 250px; /* Further reduce image size for small screens */
+        max-width: 350px;
+        padding-top: 80px;
+        margin-left: 85px;
+    }
+    .background-shape{
+        width: 75%;
+    height: 58%;
+    margin-right: 0px;
+    z-index: 0;
+    top: 42%;
     }
 }
-
-/* Prevent Horizontal Scrolling */
-/* body, html {
-    overflow-x: hidden;
-} */
