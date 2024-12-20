@@ -1,5 +1,5 @@
-import Doctor from '../../../public/Image/appointment.png';
-import Logo from '../../../public/Image/commonLogo.png';
+import Doctor from '/Image/appointment.png';
+import Logo from '/Image/commonLogo.png';
 import "./Appointment.css";
 
 const Appointment = () => {

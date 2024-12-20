@@ -74,11 +74,12 @@
     }
 
     .appointment-form {
+        margin: auto;
         padding: 15px;
     }
 
     .appointment-btn {
-        width: 100%;
+        width: 35%;
         border-radius: 20px;
     }
 }

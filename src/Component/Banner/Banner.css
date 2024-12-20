@@ -17,12 +17,14 @@
 .banner_header {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .banner_logo {
     height: 28px;
     width: 29px;
     margin-right: 10px;
+    
 }
 
 .banner_service-text {
@@ -193,6 +195,10 @@
         padding-bottom: 32px;
     }
 
+    .banner_vector {
+        margin-left: 200px;
+    }
+
     .banner_header {
         flex-direction: column;
         text-align: center;
@@ -219,19 +225,29 @@
     }
 
     .banner_description {
-        width: 100%;
+        width: 80%;
         text-align: center;
         padding: 0 15px;
+        margin: auto;
     }
 
     .banner_buttons {
         flex-direction: column;
         gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .button-discover{
+        width: 200px;
+    }
+
+    .custom-button{
+        width: 200px;
     }
 
     .banner_vector {
         width: 150px;
-        margin-left: 0;
+        margin-left: 390px;
     }
 
     .banner_slider-image {
@@ -301,7 +317,6 @@
         max-width: 120px;
         margin: 0 auto;
     }
-
 
     .button-discover, 
     .custom-button {

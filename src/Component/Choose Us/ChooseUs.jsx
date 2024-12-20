@@ -1,7 +1,7 @@
-import "./ChooseUs.css"; // Import raw CSS
-import Doctor from "../../../public/Image/Doctor-PNG-Images 1.png";
-import Plus from "../../../public/Image/Plus.png";
-import CommonLogo from '../../../public/Image/commonLogo.png';
+import "./ChooseUs.css";
+import Doctor from "/Image/Doctor-PNG-Images 1.png";
+import Plus from "/Image/Plus.png";
+import CommonLogo from '/Image/commonLogo.png';
 
 const ChooseUs = () => {
     return (

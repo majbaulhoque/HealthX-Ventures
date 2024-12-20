@@ -1,3 +1,4 @@
+/* Footer Styles */
 .footer {
     background-color: #0b1622;
     color: #fff;
@@ -32,7 +33,7 @@
 
 .footer-section ul {
     list-style: none;
-    margin-left: 40px;
+    margin: 0;
     padding: 0;
     padding-top: 5px;
 }
@@ -45,6 +46,7 @@
 }
 
 .li-icon {
+    margin-left: 40px;
     margin-right: 8px;
     font-size: 0.8rem;
 }
@@ -105,51 +107,86 @@ footer address p {
     width: 300px;
 }
 
-/* Media Queries for Small and Medium Devices */
+/* Responsive Styles */
 
-@media (max-width: 768px) {
+/* Medium Devices (md) */
+@media (max-width: 1024px) {
     .footer .container {
-        grid-template-columns: 1fr;
-        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
         padding: 0 15px;
     }
 
     .footer-section h4 {
-        margin-left: 0;
+        margin-left: 20px;
     }
 
     .footer-section ul {
-        margin-left: 0;
-        padding-left: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align content to the start */
+        justify-content: flex-start; /* Justify content to the start */
     }
 
-    .footer-logo-parent {
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-
-    .footer-socials {
-        justify-content: center;
+    .footer-section ul li {
+        justify-content: flex-start; /* Left-align content within li */
     }
 
     footer address p {
         width: 100%;
-        text-align: center;
+        text-align: start; /* Left-align text */
+    }
+
+    .footer-socials {
+        justify-content: flex-start; /* Align social icons to the start */
     }
 }
 
-/* Media Query for Medium Devices */
-@media (max-width: 1024px) {
+/* Small Devices (sm) */
+@media (max-width: 768px) {
     .footer .container {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 0 20px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+        text-align: start; /* Left-align all content */
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
     }
 
     .footer-section h4 {
-        margin-left: 20px;
+        margin: 0;
     }
 
     .footer-section ul {
-        margin-left: 20px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align content to the start */
+        justify-content: flex-start; /* Justify content to the start */
+    }
+
+    .footer-section ul li {
+        justify-content: flex-start; /* Left-align content within li */
+    }
+
+    .footer-logo-parent {
+        justify-content: flex-start; /* Align logo to the start */
+    }
+
+    .footer-socials {
+        justify-content: flex-start; /* Align social icons to the start */
+    }
+
+    footer address p {
+        text-align: start; /* Left-align text */
+    }
+
+    .footer-bottom {
+        text-align: center; /* Center-align copyright text */
+        font-size: 0.8rem;
     }
 }

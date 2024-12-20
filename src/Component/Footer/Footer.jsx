@@ -39,7 +39,7 @@ const Footer = () => {
                 {/* Quick Links */}
                 <div className="footer-section">
                     <h4>Quick Links</h4>
-                    <ul>
+                    <ul className="footer-list">
                         <li>
                             <FaChevronRight className="li-icon" /> <a href="#" className="footer-link">About Us</a>
                         </li>
@@ -61,7 +61,7 @@ const Footer = () => {
                 {/* Departments */}
                 <div className="footer-section">
                     <h4>Department</h4>
-                    <ul>
+                    <ul className="footer-list">
                         <li>
                             <FaChevronRight className="li-icon" /> <a href="#" className="footer-link">Orthology</a>
                         </li>
@@ -83,7 +83,7 @@ const Footer = () => {
                 {/* Useful Links */}
                 <div className="footer-section">
                     <h4>Useful Links</h4>
-                    <ul>
+                    <ul className="footer-list">
                         <li>
                             <FaChevronRight className="li-icon" /> <a href="#" className="footer-link">About Us</a>
                         </li>

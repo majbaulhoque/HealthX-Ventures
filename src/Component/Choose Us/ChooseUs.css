@@ -129,7 +129,6 @@
         margin-bottom: 1rem;
     }
 
-
     .choose-us-logo {
         margin-bottom: 1rem;
     }
@@ -146,12 +145,33 @@
 
     .choose-us-content h2 {
         font-size: 1.5rem;
+        margin: auto;
+        padding-bottom: 20px;
         text-align: center;
-        width: 100%;
+        width: 80%;
     }
 
+    .choose-us-point{
+        justify-content: center;
+    }
     .choose-doctor-image {
-        max-width: 300px;
+        max-width: 330px;
+        height: 350px;
+        margin-top: 100px;
+    }
+
+    .plus-icon {
+        width: 100px;
+        margin-right: 115px;
+        padding-top: 50px;
+    }
+
+    .background-shape{
+        width: 78%;
+        height: 62%;
+        margin-right: 60px;
+        z-index: 0;
+        top: 38%;
     }
 }
 
@@ -164,12 +184,9 @@
         margin-bottom: 0.5rem;
     }
 
-    
-
     .choose-us-logo {
         margin-bottom: 1rem;
     }
-
 
     .choose-container p {
         font-size: 12px;
@@ -212,11 +229,12 @@
         padding-top: 80px;
         margin-left: 85px;
     }
+
     .background-shape{
         width: 75%;
-    height: 58%;
-    margin-right: 0px;
-    z-index: 0;
-    top: 42%;
+        height: 58%;
+        margin-right: 0px;
+        z-index: 0;
+        top: 42%;
     }
 }

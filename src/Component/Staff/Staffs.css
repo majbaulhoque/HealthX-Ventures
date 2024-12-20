@@ -7,7 +7,7 @@
     margin: 0 auto;
     padding: 20px;
     margin-bottom: 28px;
-    max-width: 1120px; /* Large screen max-width */
+    max-width: 1120px;
 }
 
 /* Doctor Card */
@@ -18,7 +18,7 @@
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 12px;
-    width: 280px; /* Card width */
+    width: 280px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -27,9 +27,9 @@
 }
 
 .doctor-image {
-    width: 100%; /* Use full width of the card */
-    max-width: 311px; /* Maintain aspect ratio */
-    height: 359px; /* Adjust height automatically */
+    width: 100%;
+    max-width: 311px;
+    height: 359px;
     border-radius: 8px;
     object-fit: cover;
     border: 2px solid #ddd;
@@ -105,16 +105,15 @@
     padding-bottom: 12px;
     color: #004990;
     font-size: 32px;
-    text-align: center; /* Center text */
+    text-align: center;
 }
 
 .doctor-description {
     padding-bottom: 25px;
     max-width: 550px;
-    margin: 0 auto; /* Center horizontally */
-    text-align: center; /* Center text */
+    margin: 0 auto;
+    text-align: center;
 }
-
 
 /* Responsive Design */
 
@@ -153,8 +152,8 @@
 /* Medium Devices - Tablets (601px to 991px) */
 @media (min-width: 601px) and (max-width: 991px) {
     .doctor-container {
-        justify-content: space-around;
-        gap: 20px;
+        justify-content: space-between;
+        gap: 15px;
     }
 
     .doctor-card {

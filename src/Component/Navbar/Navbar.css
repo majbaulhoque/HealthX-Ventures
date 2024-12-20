@@ -1,25 +1,29 @@
-*{
-    margin: 0px;
-    padding: 0px;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/* Navbar CSS */
 
+/* Navbar container */
 .navbar-wrapper {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0;
-    padding: 0; 
 }
 
+/* Main container */
 .navbar-container {
     max-width: 1120px;
     margin: 0 auto;
-    padding: 12px 32px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #ffffff; 
+    position: relative;
 }
 
+/* Logo section */
 .logo-container {
     display: flex;
     align-items: center;
@@ -32,12 +36,19 @@
     color: #004990;
 }
 
-.navigation-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 1100;
 }
 
+.menu-icon {
+    color: black;
+}
+
+/* Navigation Menu */
 .navigation-menu {
     list-style: none;
     display: flex;
@@ -67,6 +78,7 @@
     color: #0056b3;
 }
 
+/* Additional Section */
 .additional-section {
     display: flex;
     align-items: center;
@@ -78,8 +90,8 @@
     color: black;
     cursor: pointer;
     padding: 6px;
-    width: 24px;
-    height: 24px;
+    width: 36px;
+    height: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +100,16 @@
     transition: all 0.3s ease;
 }
 
+.nav-icon:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
+.nav-icon:active {
+    transform: scale(1.05);
+}
+
+/* Button Styles */
 .custom-button {
     background: linear-gradient(to bottom, #014990, #DAEDFF);
     color: white;
@@ -110,4 +132,46 @@
 .custom-button:active {
     background: linear-gradient(to bottom, #5a9de2, #003f7d);
     transform: translateY(1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block; /* Show hamburger menu */
+    }
+
+    .navigation-menu {
+        display: none; /* Hide by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Position menu below navbar */
+        left: 0;
+        width: 100%;
+        background-color: #000000; /* Match demo background */
+        gap: 15px;
+        padding: 20px 0;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .navigation-menu.open {
+        display: flex; /* Show when open */
+    }
+
+    .menu-item a {
+        color: white; /* White text for visibility */
+    }
+
+    .menu-item a:hover {
+        color: orange; /* Highlight on hover */
+    }
+
+    .additional-section {
+        display: none; /* Hide additional icons on mobile */
+    }
 }
