@@ -12,6 +12,7 @@
     max-width: 1120px;
     margin: auto;
     padding-top: 60px;
+    padding-bottom: 8px;
 }
 
 .choose-container p {
@@ -41,7 +42,7 @@
     min-width: 300px;
 }
 
-.choose-us-content h2 {
+#choose-us-header{
     font-size: 1.8rem;
     color: #123456;
     margin-bottom: 1.5rem;
@@ -143,7 +144,7 @@
         align-items: center;
     }
 
-    .choose-us-content h2 {
+    #choose-us-header {
         font-size: 1.5rem;
         margin: auto;
         padding-bottom: 20px;
@@ -184,6 +185,12 @@
         margin-bottom: 0.5rem;
     }
 
+    #choose-us-header{
+        text-align: center;
+        padding-bottom: 12px;
+        width: 300px;
+    }
+
     .choose-us-logo {
         margin-bottom: 1rem;
     }
@@ -198,21 +205,16 @@
         align-items: center;
     }
 
-    .choose-us-content h2 {
-        font-size: 1.3rem;
-        text-align: center;
-        width: 400PX;
-    }
-
     .point-details p {
         font-size: 0.85rem;
-        width: 300px;
+        width: 230px;
         text-align: justify;
         font-size: 16px;
         margin-top: 5px;
     }
 
     .point-number{
+        padding: 5%;
         width: 20px;
         height: 20px;
         font-size: 18px;
@@ -220,21 +222,26 @@
 
     .plus-icon {
         width: 80px;
-        margin-right: 95px;
-        padding-top: 70px;
+        margin-right: 135px;
+        padding-top: 80px;
+    }
+
+    .choose-us-image{
+        margin-right: 20px;
+        margin-top: -100px;
     }
 
     .choose-doctor-image {
         max-width: 350px;
-        padding-top: 80px;
+        padding-top: 20px;
         margin-left: 85px;
     }
 
     .background-shape{
-        width: 75%;
-        height: 58%;
+        width: 88%;
+        height: 54%;
         margin-right: 0px;
         z-index: 0;
-        top: 42%;
+        top: 46%;
     }
 }

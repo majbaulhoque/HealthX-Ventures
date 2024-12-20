@@ -3,8 +3,14 @@ import Vector from '/Image/Vector.png';
 import Slider from '/Image/Banner.png';
 import './Banner.css';
 import { FaMapMarkerAlt, FaSearch } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Banner = () => {
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
     return (
         <div>
             <div className='bg-banner'>
@@ -28,7 +34,7 @@ const Banner = () => {
                             </div>
                         </div>
                         <div className="banner_slider">
-                            <img src={Slider} alt="Slider" className="banner_slider-image" />
+                            <img src={Slider} alt="Slider" className="banner_slider-image" data-aos="zoom-in" />
                         </div>
                     </div>
                 </div>

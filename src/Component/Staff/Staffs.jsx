@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './Staffs.css';
 import axios from 'axios';
 import { FaStar } from 'react-icons/fa';
-import CommonLogo from '../../../public/Image/commonLogo.png'
+import CommonLogo from '/Image/commonLogo.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 

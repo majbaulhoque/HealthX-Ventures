@@ -29,6 +29,7 @@ const Appointment = () => {
                             src={Doctor}
                             alt="Doctor"
                             className="appointment-doctor-image"
+                            data-aos="zoom-in"
                         />
                     </div>
 

@@ -250,10 +250,12 @@
         margin-left: 390px;
     }
 
+
     .banner_slider-image {
         max-width: 100%;
         margin-left: 0;
     }
+    
 
     .search-bar-container {
         flex-direction: column;
@@ -283,7 +285,7 @@
     }
 
     .banner_description {
-        width: 400px;
+        width: 370px;
         color: black;
         line-height: 1.5;
     }
