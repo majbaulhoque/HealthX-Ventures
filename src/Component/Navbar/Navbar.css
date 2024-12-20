@@ -139,6 +139,8 @@
     .navbar-container {
         flex-direction: row;
         justify-content: space-between;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
     .menu-toggle {

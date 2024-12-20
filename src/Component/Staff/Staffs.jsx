@@ -3,6 +3,8 @@ import './Staffs.css';
 import axios from 'axios';
 import { FaStar } from 'react-icons/fa';
 import CommonLogo from '../../../public/Image/commonLogo.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Staffs = () => {
     const [doctors, setDoctors] = useState([]);
@@ -19,6 +21,7 @@ const Staffs = () => {
 
     useEffect(() => {
         getDoctorsApi();
+        AOS.init({duration: 2000});
     }, []);
 
     return (
@@ -35,7 +38,7 @@ const Staffs = () => {
                 {doctors?.map((doctor) => {
                     const { id, name, specialty, rating, reviews, patients, hospital, image } = doctor || {};
                     return (
-                        <div key={id} className="doctor-card">
+                        <div data-aos="zoom-in" key={id} className="doctor-card">
                             <img src={image} alt={name} className="doctor-image" />
                             <h2 className="doctor-name">{name}</h2>
                             <div className="doctor-details">

@@ -1,8 +1,15 @@
 import Doctor from '/Image/appointment.png';
 import Logo from '/Image/commonLogo.png';
 import "./Appointment.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 
 const Appointment = () => {
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
     return (
         <div>
             <div className="appointment-header">
@@ -26,7 +33,7 @@ const Appointment = () => {
                     </div>
 
                     {/* Right Section: Appointment Form */}
-                    <div className="appointment-form-container">
+                    <div className="appointment-form-container" data-aos="fade-up">
                         <form className="appointment-form">
                             <div className="appointment-form-row">
                                 <div className="appointment-form-group">

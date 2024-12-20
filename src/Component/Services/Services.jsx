@@ -2,6 +2,9 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Logo from '/Image/commonLogo.png';
 import './Services.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Services = () => {
     const [services, setServices] = useState([]);
@@ -18,6 +21,7 @@ const Services = () => {
 
     useEffect(() => {
         getServicesApi();
+        AOS.init({duration: 2000});
     }, []);
 
     return (
@@ -33,7 +37,8 @@ const Services = () => {
                     {services.map((service) => {
                         const { id, name, description, img } = service;
                         return (
-                            <div key={id} className="service-card">
+                            <div key={id} className="service-card"
+                            data-aos="zoom-in">
                                 <img src={img} alt={name} />
                                 <h3>{name}</h3>
                                 <p>{description}</p>
