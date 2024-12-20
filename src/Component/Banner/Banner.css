@@ -141,7 +141,7 @@
 }
 
 .search-button {
-    width: 15%;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,4 +182,128 @@
 
 .search-input::placeholder {
     color: #aaa;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) { /* Medium devices (Tablets and large phones) */
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .banner_header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .custom-button, .button-discover {
+        width: 50%;
+        margin-top: 10px;
+        margin: 0 auto;
+    }
+
+    .banner_logo {
+        margin-bottom: 10px;
+    }
+
+    .banner_service-text {
+        font-size: 14px;
+    }
+
+    .banner_title, .banner_title_2 {
+        font-size: 36px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .banner_description {
+        width: 100%;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .banner_buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner_vector {
+        width: 150px;
+        margin-left: 0;
+    }
+
+    .banner_slider-image {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .search-bar-container {
+        flex-direction: column;
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .input-box:nth-child(1), 
+    .input-box:nth-child(2), 
+    .input-box:nth-child(3) {
+        width: auto;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .search-button {
+        width: auto;
+        max-width: 150px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) { /* Small devices (Phones) */
+    .banner {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .banner_description {
+        width: 400px;
+        color: black;
+        line-height: 1.5;
+    }
+
+    .banner_title, .banner_title_2 {
+        font-size: 28px;
+    }
+
+    .banner_header {
+        display: flex;
+    }
+
+    .banner_vector {
+        display: none; /* Hide the vector for very small screens */
+    }
+
+    .search-bar-container {
+        margin: -30px auto 0;
+        padding: 15px 10px;
+    }
+
+    .input-box {
+        padding: 6px 8px;
+        max-width: 100%;
+    }
+
+    .search-button {
+        padding: 8px 15px;
+        font-size: 12px;
+        max-width: 120px;
+        margin: 0 auto;
+    }
+
+
+    .button-discover, 
+    .custom-button {
+        margin-bottom: 10px;
+    }
 }
